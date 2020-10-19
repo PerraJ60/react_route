@@ -5,10 +5,7 @@ import Products from './components/Products.js';
 import Contact from './components/Contact.js';
 import About from './components/About.js';
 
-
 function App () {
-
- // render() {
     return (
       <div>
         <nav className="navbar navbar-light">
@@ -29,31 +26,6 @@ function App () {
     
     </div>
     );
-  //}
 }
-
-/*Product component */
-/*
-const Products = () => (
-  <div>
-    <h2>Products</h2>
-  </div>
-)
-*/
-/*
-const Contact = () => (
-  <div>
-    <h2>Contact us!</h2>
-  </div>
-)
-*/
-/*
-const About = () => (
-  <div>
-    <h2>About</h2>
-  </div>
-)
-*/
-
 export default App;
     
