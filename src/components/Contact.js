@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from 'react';
 import Input from './Indata.js';
-import '../App.css';
 
 function Contact () {
     /*
