@@ -1,5 +1,7 @@
 import React from 'react';
-
+/* 
+ Testing forwardRef
+*/
 function Input({type, id, onKeyDown, placeholder}, ref) {
     return (
         <input 

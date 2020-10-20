@@ -1,11 +1,11 @@
 import React, { useEffect, useRef } from 'react';
-import Input from './Indata.js';
+import Input from './Input.js';
 
 function Contact () {
     /*
-    This contact form needs no mouse, just the Enter key.
+     This contact form needs no mouse, just the Enter key.
     */
-
+   
     const nameRef       = useRef(null);
     const emailRef      = useRef(null);
     const messageRef    = useRef(null);
@@ -52,11 +52,37 @@ function Contact () {
     return (
     <div style={{marginLeft: '50px'}}>
       <h2>Contact us!</h2>
+      <br/>
       <form onSubmit={submitMessage} >
-        <Input type='text' id='name' ref={nameRef} onKeyDown={namekeyDown} placeholder='Enter your name'/><br/>
-        <Input type='text' id='email' ref={emailRef} onKeyDown={emailkeyDown} placeholder='Enter your e-mail'/><br/>
-        <textarea type='text' id='message' ref={messageRef} onKeyDown={messagekeyDown} placeholder='Enter your message'></textarea><br/>
-        <button type='submit' ref={submitRef} style={{marginTop: '6px'}}>Send Message</button>
+        <Input 
+            type='text' 
+            id='name' 
+            ref={nameRef} 
+            onKeyDown={namekeyDown} 
+            placeholder='Enter your name'
+            />
+            <br/>
+        <Input 
+            type='text' 
+            id='email' 
+            ref={emailRef} 
+            onKeyDown={emailkeyDown} 
+            placeholder='Enter your e-mail'
+            />
+            <br/>
+        <textarea 
+            type='text' 
+            id='message' 
+            ref={messageRef} 
+            onKeyDown={messagekeyDown} 
+            placeholder='Enter your message'>
+        </textarea>
+            <br/>
+        <button 
+            type='submit' 
+            ref={submitRef} 
+            style={{marginTop: '6px'}}>Send Message
+        </button>
       </form>
     </div>
   )
