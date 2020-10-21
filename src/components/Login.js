@@ -8,11 +8,11 @@ function Login() {
     });
   
     const submitForm = (e) => {
-     alert ('Login not yet implemented, sorry!!');
+     alert('username: ' + form.username);
+     alert('password: ' + form.password);
     };
   
     const updateField = (e) => {
-      alert('cool');
       setValues({
         ...form,
         [e.target.name]: e.target.value

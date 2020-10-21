@@ -1,13 +1,16 @@
 import React from 'react';
-/* 
- Testing forwardRef
+/*
+ 'Experiment' component.
+ Testing forwardRef, passing of props.
 */
-function Input({type, id, onKeyDown, placeholder}, ref) {
+function Input({type, id, name, onKeyDown, onChange, placeholder}, ref) {
     return (
         <input 
             type={type}
             id={id}
+            name={name}
             onKeyDown={onKeyDown}
+            onChange={onChange}
             placeholder={placeholder}
             ref={ref}
         />
