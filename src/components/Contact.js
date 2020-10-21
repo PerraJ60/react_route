@@ -5,7 +5,7 @@ function Contact () {
     /*
      This contact form needs no mouse, just the Enter key.
     */
-   
+
     const nameRef       = useRef(null);
     const emailRef      = useRef(null);
     const messageRef    = useRef(null);
@@ -39,8 +39,8 @@ function Contact () {
     }
     function submitMessage(e) {
         if(isValidEmailAddress (emailRef.current.value) &&
-                            nameRef.current.value != '' &&
-                            messageRef.current.value != '') 
+                            nameRef.current.value !== '' &&
+                            messageRef.current.value !== '') 
         {
             alert('Your message has been sent successfully!\nWe will respond as soon as possible!');
         }

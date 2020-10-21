@@ -5,7 +5,7 @@ A Contact form and a Login form are implemented, using some React features and h
 choose from menu.
 2020-10-21 Per Johansson
 ===================================================================================*/
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link, Route, Switch } from 'react-router-dom';
 import Home from './components/Home.js';
 import Products from './components/Products.js';
