@@ -1,9 +1,11 @@
 /*==================================================================================
-Lab #1: 
-This is a simple React webpage with basic routing and styling.
-A Contact form and a Login form are implemented, using some React features and hooks,
-choose from menu.
-2020-10-21 Per Johansson
+Lab #2:
+For this lab, Products (see menu) is now implemented with a Tools web store, using a
+json server file.
+Global state management should be working. 
+Much is still not implemented, but it is a good platform to build further on.
+Changes in About, and Contact as well. Extern API, and styled components are used.
+Tests are done for 5 components, 4 of them are snapshots.
 ===================================================================================*/
 import React from 'react';
 import { Link, Route, Switch } from 'react-router-dom';
@@ -39,13 +41,13 @@ function App () {
             <GlobalProvider>
              <CartCountProvider>
               <div className='content'>  
-                  <Switch>
-                    <Route exact path='/' component={Home}/>
-                    <Route path='/products' component={Products}/>
-                    <Route path='/contact' component={Contact}/>
-                    <Route path='/about' component={About}/>
-                    <Route path='/login' component={Login}/>   
-                  </Switch>
+                <Switch>
+                  <Route exact path='/' component={Home}/>
+                  <Route path='/products' component={Products}/>
+                  <Route path='/contact' component={Contact}/>
+                  <Route path='/about' component={About}/>
+                  <Route path='/login' component={Login}/>   
+                </Switch>
               </div>
              </CartCountProvider>
             </GlobalProvider>
