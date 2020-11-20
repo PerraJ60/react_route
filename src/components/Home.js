@@ -11,8 +11,10 @@ function Home () {
           json server file.
           Global state management should be working. 
           Much is still not implemented, but it is a good platform to build further on.
+          Use inspect element Console to watch what happens when Add to Cart is pushed!
           Changes in About, and Contact as well. Extern API, and styled components are used.
           Tests are done for 5 components, 4 of them are snapshots.
+
         </p>
       </h5>
     </div>
