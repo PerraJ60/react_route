@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import Input from './Input.js';
+import styled from 'styled-components';
 
 function Contact () {
     /*
@@ -49,6 +50,15 @@ function Contact () {
             alert('Some field(s) are not correct! Please retry!');
         }
     }
+
+    const Button = styled.button`
+    background: transparent;
+    border-radius: 4px;
+    border: 2px solid #106b21;
+    color: #106b21;
+    margin-left: 1px;
+    padding: 0.25em 1em;
+  `
     return (
     <div style={{marginLeft: '50px'}}>
       <h2>Contact us!</h2>
@@ -78,11 +88,11 @@ function Contact () {
             placeholder='Enter your message'>
         </textarea>
             <br/>
-        <button 
+        <Button 
             type='submit' 
             ref={submitRef} 
-            style={{marginTop: '6px'}}>Send Message
-        </button>
+            style={{marginTop: '5px'}}>Send Message
+        </Button>
       </form>
     </div>
   )
